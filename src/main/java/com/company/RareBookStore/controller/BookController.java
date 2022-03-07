@@ -42,6 +42,14 @@ public class BookController {
         return returnVal.orElse(null);
     }
 
+    //GET CUSTOMER BY ID
+    @GetMapping("/customers/{id}")
+    @ResponseStatus(HttpStatus.OK)
+    public Customer getCustomerById(@PathVariable Integer id) {
+        Optional<Customer> returnVal = customerRepository.findById(id);
+        return returnVal.orElse(null);
+    }
+
     //GET BOOKS BY AUTHOR
     @GetMapping("/books/{author}")
     @ResponseStatus(HttpStatus.OK)
