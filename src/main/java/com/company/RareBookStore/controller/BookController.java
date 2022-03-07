@@ -31,6 +31,27 @@ public class BookController {
         return returnVal.orElse(null);
     }
 
+    //GET BOOKS BY AUTHOR
+    @GetMapping("/books/{author}")
+    @ResponseStatus(HttpStatus.OK)
+    public List<Book> getBooksByAuthor(@PathVariable String author) {
+        return bookRepository.findBookByAuthor(author);
+    }
+
+    //GET BOOKS BY GENRE
+    @GetMapping("/books/{genre}")
+    @ResponseStatus(HttpStatus.OK)
+    public List<Book> getBooksByGenre(@PathVariable String genre) {
+        return bookRepository.findBookByGenre(genre);
+    }
+
+    //GET BOOKS BY CONDITION
+    @GetMapping("/books/{genre}")
+    @ResponseStatus(HttpStatus.OK)
+    public List<Book> getBooksByCondition(@PathVariable String bookCondition) {
+        return bookRepository.findBookByCondition(bookCondition);
+    }
+
     //CREATE NEW BOOK
     @PostMapping("/books")
     @ResponseStatus(HttpStatus.CREATED)
@@ -43,7 +64,7 @@ public class BookController {
     @PutMapping("/books/{id}")
     @ResponseStatus(HttpStatus.OK)
     public void updateBook(@RequestBody Book book, @PathVariable Integer id) {
-        if(book.getId() != id) {
+        if(book.getBookId() != id) {
             throw new IllegalArgumentException("Entered ID does not match existing book ID");
         }
         bookRepository.save(book);
