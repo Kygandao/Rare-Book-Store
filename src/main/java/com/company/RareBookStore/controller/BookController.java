@@ -23,27 +23,6 @@ public class BookController {
         return bookRepository.findAll();
     }
 
-    //GET BOOKS BY AUTHOR
-    @GetMapping("/books/{author}")
-    @ResponseStatus(HttpStatus.OK)
-    public List<Book> getAllBooksByAuthor(@PathVariable String author) {
-        return bookRepository.findBookByAuthor(author);
-    }
-
-    //GET BOOKS BY GENRE
-    @GetMapping("/books/{genre}")
-    @ResponseStatus(HttpStatus.OK)
-    public List<Book> getAllBooksByGenre(@PathVariable String genre) {
-        return bookRepository.findBookByGenre(genre);
-    }
-
-    //GET BOOKS BY CONDITION
-    @GetMapping("/books/{condition}")
-    @ResponseStatus(HttpStatus.OK)
-    public List<Book> getAllBooksByCondition(@PathVariable String condition) {
-        return bookRepository.findBookByCondition(condition);
-    }
-
     //GET BOOK BY ID
     @GetMapping("/books/{id}")
     @ResponseStatus(HttpStatus.OK)
