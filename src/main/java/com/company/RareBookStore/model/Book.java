@@ -7,7 +7,6 @@ import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.PositiveOrZero;
 import javax.validation.constraints.Size;
 import java.io.Serializable;
-import java.math.BigDecimal;
 import java.util.Objects;
 
 @Entity
@@ -17,7 +16,7 @@ public class Book implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private Integer Id;
+    private Integer bookId;
 
     @NotEmpty(message = "Must provide the Title of the Book")
     private String title;
@@ -29,31 +28,31 @@ public class Book implements Serializable {
     private String edition;
     private String binding;
     @NotEmpty(message = "Must provide the Condition of the Book")
-    private String condition;
+    private String bookCondition;
     @PositiveOrZero
-    private BigDecimal price;
+    private double price;
 
     public Book() {
     }
 
-    public Book(Integer id, String title, String author, String genre, int yearWritten, String edition, String binding, String condition, BigDecimal price) {
-        Id = id;
+    public Book(Integer bookId, String title, String author, String genre, int yearWritten, String edition, String binding, String bookCondition, double price) {
+        this.bookId = bookId;
         this.title = title;
         this.author = author;
         this.genre = genre;
         this.yearWritten = yearWritten;
         this.edition = edition;
         this.binding = binding;
-        this.condition = condition;
+        this.bookCondition = bookCondition;
         this.price = price;
     }
 
-    public Integer getId() {
-        return Id;
+    public Integer getBookId() {
+        return bookId;
     }
 
-    public void setId(Integer id) {
-        Id = id;
+    public void setBookId(Integer bookId) {
+        this.bookId = bookId;
     }
 
     public String getTitle() {
@@ -104,19 +103,19 @@ public class Book implements Serializable {
         this.binding = binding;
     }
 
-    public String getCondition() {
-        return condition;
+    public String getBookCondition() {
+        return bookCondition;
     }
 
-    public void setCondition(String condition) {
-        this.condition = condition;
+    public void setBookCondition(String bookCondition) {
+        this.bookCondition = bookCondition;
     }
 
-    public BigDecimal getPrice() {
+    public double getPrice() {
         return price;
     }
 
-    public void setPrice(BigDecimal price) {
+    public void setPrice(double price) {
         this.price = price;
     }
 
@@ -125,25 +124,25 @@ public class Book implements Serializable {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Book book = (Book) o;
-        return yearWritten == book.yearWritten && Objects.equals(Id, book.Id) && Objects.equals(title, book.title) && Objects.equals(author, book.author) && Objects.equals(genre, book.genre) && Objects.equals(edition, book.edition) && Objects.equals(binding, book.binding) && Objects.equals(condition, book.condition) && Objects.equals(price, book.price);
+        return yearWritten == book.yearWritten && Double.compare(book.price, price) == 0 && Objects.equals(bookId, book.bookId) && Objects.equals(title, book.title) && Objects.equals(author, book.author) && Objects.equals(genre, book.genre) && Objects.equals(edition, book.edition) && Objects.equals(binding, book.binding) && Objects.equals(bookCondition, book.bookCondition);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(Id, title, author, genre, yearWritten, edition, binding, condition, price);
+        return Objects.hash(bookId, title, author, genre, yearWritten, edition, binding, bookCondition, price);
     }
 
     @Override
     public String toString() {
         return "Book{" +
-                "Id=" + Id +
+                "bookId=" + bookId +
                 ", title='" + title + '\'' +
                 ", author='" + author + '\'' +
                 ", genre='" + genre + '\'' +
                 ", yearWritten=" + yearWritten +
                 ", edition='" + edition + '\'' +
                 ", binding='" + binding + '\'' +
-                ", condition='" + condition + '\'' +
+                ", bookCondition='" + bookCondition + '\'' +
                 ", price=" + price +
                 '}';
     }
