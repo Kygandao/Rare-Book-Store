@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
+import javax.validation.Valid;
 import java.util.List;
 import java.util.Optional;
 
@@ -55,7 +56,7 @@ public class BookController {
     //CREATE NEW BOOK
     @PostMapping("/books")
     @ResponseStatus(HttpStatus.CREATED)
-    public Book createBook(@RequestBody Book book) {
+    public Book createBook(@RequestBody @Valid Book book) {
         bookRepository.save(book);
         return book;
     }
