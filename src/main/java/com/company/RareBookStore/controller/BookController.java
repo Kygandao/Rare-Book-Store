@@ -95,6 +95,13 @@ public class BookController {
     public void deleteBook(@RequestBody Book book, @PathVariable Integer id) {
         bookRepository.deleteById(id);
     }
+
+    //DELETE CUSTOMER BY ID
+    @DeleteMapping("/customers/{id}")
+    @ResponseStatus(HttpStatus.OK)
+    public void deleteCustomer(@RequestBody Customer customer, @PathVariable Integer id) {
+        customerRepository.deleteById(id);
+    }
 }
 
 
