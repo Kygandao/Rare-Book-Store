@@ -1,7 +1,9 @@
 package com.company.RareBookStore.controller;
 
 import com.company.RareBookStore.model.Book;
+import com.company.RareBookStore.model.Customer;
 import com.company.RareBookStore.repository.BookRepository;
+import com.company.RareBookStore.repository.CustomerRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
@@ -14,6 +16,7 @@ public class BookController {
 
     @Autowired
     private BookRepository bookRepository;
+    private CustomerRepository customerRepository;
 
     //GET ALL BOOKS
     @GetMapping("/books")
@@ -23,11 +26,27 @@ public class BookController {
         return bookRepository.findAll();
     }
 
+    //GET ALL CUSTOMERS
+    @GetMapping("/customers")
+    @ResponseStatus(HttpStatus.OK)
+    public List<Customer> getAllCustomers() {
+
+        return customerRepository.findAll();
+    }
+
     //GET BOOK BY ID
     @GetMapping("/books/{id}")
     @ResponseStatus(HttpStatus.OK)
     public Book getBookById(@PathVariable Integer id) {
         Optional<Book> returnVal = bookRepository.findById(id);
+        return returnVal.orElse(null);
+    }
+
+    //GET CUSTOMER BY ID
+    @GetMapping("/customers/{id}")
+    @ResponseStatus(HttpStatus.OK)
+    public Customer getCustomerById(@PathVariable Integer id) {
+        Optional<Customer> returnVal = customerRepository.findById(id);
         return returnVal.orElse(null);
     }
 
@@ -75,6 +94,13 @@ public class BookController {
     @ResponseStatus(HttpStatus.OK)
     public void deleteBook(@RequestBody Book book, @PathVariable Integer id) {
         bookRepository.deleteById(id);
+    }
+
+    //DELETE CUSTOMER BY ID
+    @DeleteMapping("/customers/{id}")
+    @ResponseStatus(HttpStatus.OK)
+    public void deleteCustomer(@RequestBody Customer customer, @PathVariable Integer id) {
+        customerRepository.deleteById(id);
     }
 }
 
