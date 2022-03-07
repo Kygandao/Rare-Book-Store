@@ -23,6 +23,8 @@ public class Customer  implements Serializable {
     private String phoneNumber;
     private Address address;
     private boolean vip;
+
+    @OneToMany(mappedBy = "customerId", cascade = CascadeType.ALL, fetch = FetchType.EAGER)
     private Set<Book> purchases;
 
     public Customer() {

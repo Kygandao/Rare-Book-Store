@@ -31,6 +31,7 @@ public class Book implements Serializable {
     private String bookCondition;
     @PositiveOrZero
     private double price;
+    private Integer customerId;
 
     public Book() {
     }
@@ -119,17 +120,25 @@ public class Book implements Serializable {
         this.price = price;
     }
 
+    public Integer getCustomerId() {
+        return customerId;
+    }
+
+    public void setCustomerId(Integer customerId) {
+        this.customerId = customerId;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Book book = (Book) o;
-        return yearWritten == book.yearWritten && Double.compare(book.price, price) == 0 && Objects.equals(bookId, book.bookId) && Objects.equals(title, book.title) && Objects.equals(author, book.author) && Objects.equals(genre, book.genre) && Objects.equals(edition, book.edition) && Objects.equals(binding, book.binding) && Objects.equals(bookCondition, book.bookCondition);
+        return yearWritten == book.yearWritten && Double.compare(book.price, price) == 0 && Objects.equals(bookId, book.bookId) && Objects.equals(title, book.title) && Objects.equals(author, book.author) && Objects.equals(genre, book.genre) && Objects.equals(edition, book.edition) && Objects.equals(binding, book.binding) && Objects.equals(bookCondition, book.bookCondition) && Objects.equals(customerId, book.customerId);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(bookId, title, author, genre, yearWritten, edition, binding, bookCondition, price);
+        return Objects.hash(bookId, title, author, genre, yearWritten, edition, binding, bookCondition, price, customerId);
     }
 
     @Override
@@ -144,6 +153,7 @@ public class Book implements Serializable {
                 ", binding='" + binding + '\'' +
                 ", bookCondition='" + bookCondition + '\'' +
                 ", price=" + price +
+                ", customerId=" + customerId +
                 '}';
     }
 }
