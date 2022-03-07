@@ -4,13 +4,16 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotEmpty;
+import javax.validation.constraints.PositiveOrZero;
+import javax.validation.constraints.Size;
+import java.io.Serializable;
 import java.math.BigDecimal;
 import java.util.Objects;
 
 @Entity
 @JsonIgnoreProperties({ "hibernateLazyInitializer", "handler" })
 @Table(name = "book")
-public class Book {
+public class Book implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
@@ -18,12 +21,16 @@ public class Book {
 
     @NotEmpty(message = "Must provide the Title of the Book")
     private String title;
+    @NotEmpty(message = "Must provide the Author of the Book")
     private String author;
     private String genre;
+    @Size(min = 4, max = 4, message = "Year must be exactly 4 digits")
     private int yearWritten;
     private String edition;
     private String binding;
+    @NotEmpty(message = "Must provide the Condition of the Book")
     private String condition;
+    @PositiveOrZero
     private BigDecimal price;
 
     public Book() {
