@@ -89,6 +89,16 @@ public class BookController {
         bookRepository.save(book);
     }
 
+    //UPDATE CUSTOMER BY ID
+    @PutMapping("/customers/{id}")
+    @ResponseStatus(HttpStatus.OK)
+    public void updateCustomer(@RequestBody Customer customer, @PathVariable Integer id) {
+        if(customer.getId() != id) {
+            throw new IllegalArgumentException("Entered ID does not match existing customer ID");
+        }
+        customerRepository.save(customer);
+    }
+
     //DELETE BOOK BY ID
     @DeleteMapping("/books/{id}")
     @ResponseStatus(HttpStatus.OK)
