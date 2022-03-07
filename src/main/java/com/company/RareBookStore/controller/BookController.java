@@ -1,7 +1,9 @@
 package com.company.RareBookStore.controller;
 
 import com.company.RareBookStore.model.Book;
+import com.company.RareBookStore.model.Customer;
 import com.company.RareBookStore.repository.BookRepository;
+import com.company.RareBookStore.repository.CustomerRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
@@ -14,6 +16,7 @@ public class BookController {
 
     @Autowired
     private BookRepository bookRepository;
+    private CustomerRepository customerRepository;
 
     //GET ALL BOOKS
     @GetMapping("/books")
@@ -21,6 +24,14 @@ public class BookController {
     public List<Book> getAllBooks() {
 
         return bookRepository.findAll();
+    }
+
+    //GET ALL CUSTOMERS
+    @GetMapping("/customers")
+    @ResponseStatus(HttpStatus.OK)
+    public List<Customer> getAllCustomers() {
+
+        return customerRepository.findAll();
     }
 
     //GET BOOK BY ID
