@@ -23,7 +23,7 @@ public class Book implements Serializable {
     @NotEmpty(message = "Must provide the Author of the Book")
     private String author;
     private String genre;
-    @Size(min = 4, max = 4, message = "Year must be exactly 4 digits")
+//    @Size(min = 4, max = 4, message = "Year must be exactly 4 digits")
     private String yearWritten;
     private String edition;
     private String binding;

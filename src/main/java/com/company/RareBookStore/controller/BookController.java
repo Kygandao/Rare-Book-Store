@@ -24,7 +24,7 @@ public class BookController {
     }
 
     //GET BOOK BY ID
-    @GetMapping("/books/{id}")
+    @GetMapping("/book/{id}")
     @ResponseStatus(HttpStatus.OK)
     public Book getBookById(@PathVariable Integer id) {
         Optional<Book> returnVal = bookRepository.findById(id);
@@ -61,7 +61,7 @@ public class BookController {
     }
 
     //UPDATE BOOK BY ID
-    @PutMapping("/books/{id}")
+    @PutMapping("/book/{id}")
     @ResponseStatus(HttpStatus.OK)
     public void updateBook(@RequestBody Book book, @PathVariable Integer id) {
         if(book.getId() != id) {
@@ -73,7 +73,7 @@ public class BookController {
     //DELETE BOOK BY ID
     @DeleteMapping("/books/{id}")
     @ResponseStatus(HttpStatus.OK)
-    public void deleteBook(@RequestBody Book book, @PathVariable Integer id) {
+    public void deleteBook(@PathVariable Integer id) {
         bookRepository.deleteById(id);
     }
 
