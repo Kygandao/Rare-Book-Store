@@ -15,35 +15,30 @@ import java.util.Set;
 public class Customer  implements Serializable {
 
     @Id
-    @Column(name = "customer_id")
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer id;
-
     private String firstName;
     private String lastName;
     private String email;
-    private String phoneNumber;
-    @Columns(columns = {@Column(name = "street_1"),
-            @Column(name = "street_2"),
+    @Columns(columns = {@Column(name = "street1"),
+            @Column(name = "street2"),
             @Column(name = "city"), @Column(name = "state"),
             @Column(name = "zipcode"),@Column(name = "phone")})
     @Type(type = "com.company.RareBookStore.model.AddressType")
-    private Address address;
+//    private Address address;
     private boolean vip;
 
-    @OneToMany(mappedBy = "customerId", cascade = CascadeType.ALL, fetch = FetchType.EAGER)
+    @OneToMany(mappedBy = "id", cascade = CascadeType.ALL, fetch = FetchType.EAGER)
     private Set<Book> purchases;
 
     public Customer() {
     }
 
-    public Customer(Integer id, String firstName, String lastName, String email, String phoneNumber, Address address, boolean vip, Set<Book> purchases) {
+    public Customer(Integer id, String firstName, String lastName, String email, boolean vip, Set<Book> purchases) {
         this.id = id;
         this.firstName = firstName;
         this.lastName = lastName;
         this.email = email;
-        this.phoneNumber = phoneNumber;
-        this.address = address;
         this.vip = vip;
         this.purchases = purchases;
     }
@@ -80,22 +75,6 @@ public class Customer  implements Serializable {
         this.email = email;
     }
 
-    public String getPhoneNumber() {
-        return phoneNumber;
-    }
-
-    public void setPhoneNumber(String phoneNumber) {
-        this.phoneNumber = phoneNumber;
-    }
-
-    public Address getAddress() {
-        return address;
-    }
-
-    public void setAddress(Address address) {
-        this.address = address;
-    }
-
     public boolean isVip() {
         return vip;
     }
@@ -117,12 +96,12 @@ public class Customer  implements Serializable {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Customer customer = (Customer) o;
-        return vip == customer.vip && Objects.equals(id, customer.id) && Objects.equals(firstName, customer.firstName) && Objects.equals(lastName, customer.lastName) && Objects.equals(email, customer.email) && Objects.equals(phoneNumber, customer.phoneNumber) && Objects.equals(address, customer.address) && Objects.equals(purchases, customer.purchases);
+        return vip == customer.vip && Objects.equals(id, customer.id) && Objects.equals(firstName, customer.firstName) && Objects.equals(lastName, customer.lastName) && Objects.equals(email, customer.email) && Objects.equals(purchases, customer.purchases);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, firstName, lastName, email, phoneNumber, address, vip, purchases);
+        return Objects.hash(id, firstName, lastName, email, vip, purchases);
     }
 
     @Override
@@ -132,8 +111,6 @@ public class Customer  implements Serializable {
                 ", firstName='" + firstName + '\'' +
                 ", lastName='" + lastName + '\'' +
                 ", email='" + email + '\'' +
-                ", phoneNumber='" + phoneNumber + '\'' +
-                ", address=" + address +
                 ", vip=" + vip +
                 ", purchases=" + purchases +
                 '}';
