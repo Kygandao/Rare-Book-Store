@@ -24,7 +24,7 @@ public class Book implements Serializable {
     private String author;
     private String genre;
     @Size(min = 4, max = 4, message = "Year must be exactly 4 digits")
-    private int yearWritten;
+    private String yearWritten;
     private String edition;
     private String binding;
     @NotEmpty(message = "Must provide the Condition of the Book")
@@ -36,7 +36,7 @@ public class Book implements Serializable {
     public Book() {
     }
 
-    public Book(Integer id, String title, String author, String genre, int yearWritten, String edition, String binding, String bookCondition, double price) {
+    public Book(Integer id, String title, String author, String genre, String yearWritten, String edition, String binding, String bookCondition, double price) {
         this.id = id;
         this.title = title;
         this.author = author;
@@ -48,11 +48,11 @@ public class Book implements Serializable {
         this.price = price;
     }
 
-    public Integer getBookId() {
+    public Integer getId() {
         return id;
     }
 
-    public void setBookId(Integer id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 
@@ -80,11 +80,11 @@ public class Book implements Serializable {
         this.genre = genre;
     }
 
-    public int getYearWritten() {
+    public String getYearWritten() {
         return yearWritten;
     }
 
-    public void setYearWritten(int yearWritten) {
+    public void setYearWritten(String yearWritten) {
         this.yearWritten = yearWritten;
     }
 
@@ -133,7 +133,7 @@ public class Book implements Serializable {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Book book = (Book) o;
-        return yearWritten == book.yearWritten && Double.compare(book.price, price) == 0 && Objects.equals(id, book.id) && Objects.equals(title, book.title) && Objects.equals(author, book.author) && Objects.equals(genre, book.genre) && Objects.equals(edition, book.edition) && Objects.equals(binding, book.binding) && Objects.equals(bookCondition, book.bookCondition) && Objects.equals(customerId, book.customerId);
+        return Double.compare(book.price, price) == 0 && Objects.equals(id, book.id) && Objects.equals(title, book.title) && Objects.equals(author, book.author) && Objects.equals(genre, book.genre) && Objects.equals(yearWritten, book.yearWritten) && Objects.equals(edition, book.edition) && Objects.equals(binding, book.binding) && Objects.equals(bookCondition, book.bookCondition) && Objects.equals(customerId, book.customerId);
     }
 
     @Override
@@ -148,7 +148,7 @@ public class Book implements Serializable {
                 ", title='" + title + '\'' +
                 ", author='" + author + '\'' +
                 ", genre='" + genre + '\'' +
-                ", yearWritten=" + yearWritten +
+                ", yearWritten='" + yearWritten + '\'' +
                 ", edition='" + edition + '\'' +
                 ", binding='" + binding + '\'' +
                 ", bookCondition='" + bookCondition + '\'' +
