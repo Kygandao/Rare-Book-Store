@@ -31,26 +31,26 @@ public class BookController {
         return returnVal.orElse(null);
     }
 
-//    //GET BOOKS BY AUTHOR
-//    @GetMapping("/books/{author}")
-//    @ResponseStatus(HttpStatus.OK)
-//    public List<Book> getBooksByAuthor(@PathVariable String author) {
-//        return bookRepository.findBookByAuthor(author);
-//    }
-//
-//    //GET BOOKS BY GENRE
-//    @GetMapping("/books/{genre}")
-//    @ResponseStatus(HttpStatus.OK)
-//    public List<Book> getBooksByGenre(@PathVariable String genre) {
-//        return bookRepository.findBookByGenre(genre);
-//    }
-//
-//    //GET BOOKS BY CONDITION
-//    @GetMapping("/books/{genre}")
-//    @ResponseStatus(HttpStatus.OK)
-//    public List<Book> getBooksByCondition(@PathVariable String bookCondition) {
-//        return bookRepository.findBookByCondition(bookCondition);
-//    }
+    //GET BOOKS BY AUTHOR
+    @GetMapping("/books/{author}")
+    @ResponseStatus(HttpStatus.OK)
+    public List<Book> getBooksByAuthor(@PathVariable String author) {
+        return bookRepository.findBookByAuthor(author);
+    }
+
+    //GET BOOKS BY GENRE
+    @GetMapping("/books/{genre}")
+    @ResponseStatus(HttpStatus.OK)
+    public List<Book> getBooksByGenre(@PathVariable String genre) {
+        return bookRepository.findBookByGenre(genre);
+    }
+
+    //GET BOOKS BY CONDITION
+    @GetMapping("/books/{bookCondition}")
+    @ResponseStatus(HttpStatus.OK)
+    public List<Book> getBooksByCondition(@PathVariable String bookCondition) {
+        return bookRepository.findBookByBookCondition(bookCondition);
+    }
 
     //CREATE NEW BOOK
     @PostMapping("/books")
