@@ -1,19 +1,9 @@
 package com.company.RareBookStore.model;
 
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-
-import javax.persistence.*;
 import java.util.Objects;
 
-@Entity
-@JsonIgnoreProperties({ "hibernateLazyInitializer", "handler" })
-@Table(name = "address")
 public class Address {
 
-    @Id
-    @Column(name = "id")
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    private Integer id;
     private String street1;
     private String street2;
     private String city;

@@ -1,6 +1,8 @@
 package com.company.RareBookStore.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import org.hibernate.annotations.Columns;
+import org.hibernate.annotations.Type;
 
 import javax.persistence.*;
 import java.io.Serializable;
@@ -21,7 +23,12 @@ public class Customer  implements Serializable {
     private String lastName;
     private String email;
     private String phoneNumber;
-    private int address;
+    @Columns(columns = {@Column(name = "street_1"),
+            @Column(name = "street_2"),
+            @Column(name = "city"), @Column(name = "state"),
+            @Column(name = "zipcode"),@Column(name = "phone")})
+    @Type(type = "com.company.RareBookStore.model.AddressType")
+    private Address address;
     private boolean vip;
 
     @OneToMany(mappedBy = "customerId", cascade = CascadeType.ALL, fetch = FetchType.EAGER)
@@ -30,7 +37,7 @@ public class Customer  implements Serializable {
     public Customer() {
     }
 
-    public Customer(Integer id, String firstName, String lastName, String email, String phoneNumber, int address, boolean vip, Set<Book> purchases) {
+    public Customer(Integer id, String firstName, String lastName, String email, String phoneNumber, Address address, boolean vip, Set<Book> purchases) {
         this.id = id;
         this.firstName = firstName;
         this.lastName = lastName;
@@ -81,11 +88,11 @@ public class Customer  implements Serializable {
         this.phoneNumber = phoneNumber;
     }
 
-    public int getAddress() {
+    public Address getAddress() {
         return address;
     }
 
-    public void setAddress(int address) {
+    public void setAddress(Address address) {
         this.address = address;
     }
 
