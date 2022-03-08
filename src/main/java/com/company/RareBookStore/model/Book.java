@@ -16,7 +16,7 @@ public class Book implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private Integer bookId;
+    private Integer id;
 
     @NotEmpty(message = "Must provide the Title of the Book")
     private String title;
@@ -36,8 +36,8 @@ public class Book implements Serializable {
     public Book() {
     }
 
-    public Book(Integer bookId, String title, String author, String genre, int yearWritten, String edition, String binding, String bookCondition, double price) {
-        this.bookId = bookId;
+    public Book(Integer id, String title, String author, String genre, int yearWritten, String edition, String binding, String bookCondition, double price) {
+        this.id = id;
         this.title = title;
         this.author = author;
         this.genre = genre;
@@ -49,11 +49,11 @@ public class Book implements Serializable {
     }
 
     public Integer getBookId() {
-        return bookId;
+        return id;
     }
 
-    public void setBookId(Integer bookId) {
-        this.bookId = bookId;
+    public void setBookId(Integer id) {
+        this.id = id;
     }
 
     public String getTitle() {
@@ -133,18 +133,18 @@ public class Book implements Serializable {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Book book = (Book) o;
-        return yearWritten == book.yearWritten && Double.compare(book.price, price) == 0 && Objects.equals(bookId, book.bookId) && Objects.equals(title, book.title) && Objects.equals(author, book.author) && Objects.equals(genre, book.genre) && Objects.equals(edition, book.edition) && Objects.equals(binding, book.binding) && Objects.equals(bookCondition, book.bookCondition) && Objects.equals(customerId, book.customerId);
+        return yearWritten == book.yearWritten && Double.compare(book.price, price) == 0 && Objects.equals(id, book.id) && Objects.equals(title, book.title) && Objects.equals(author, book.author) && Objects.equals(genre, book.genre) && Objects.equals(edition, book.edition) && Objects.equals(binding, book.binding) && Objects.equals(bookCondition, book.bookCondition) && Objects.equals(customerId, book.customerId);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(bookId, title, author, genre, yearWritten, edition, binding, bookCondition, price, customerId);
+        return Objects.hash(id, title, author, genre, yearWritten, edition, binding, bookCondition, price, customerId);
     }
 
     @Override
     public String toString() {
         return "Book{" +
-                "bookId=" + bookId +
+                "id=" + id +
                 ", title='" + title + '\'' +
                 ", author='" + author + '\'' +
                 ", genre='" + genre + '\'' +

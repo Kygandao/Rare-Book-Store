@@ -21,7 +21,7 @@ public class Customer  implements Serializable {
     private String lastName;
     private String email;
     private String phoneNumber;
-    private Address address;
+    private int address;
     private boolean vip;
 
     @OneToMany(mappedBy = "customerId", cascade = CascadeType.ALL, fetch = FetchType.EAGER)
@@ -30,7 +30,7 @@ public class Customer  implements Serializable {
     public Customer() {
     }
 
-    public Customer(Integer id, String firstName, String lastName, String email, String phoneNumber, Address address, boolean vip, Set<Book> purchases) {
+    public Customer(Integer id, String firstName, String lastName, String email, String phoneNumber, int address, boolean vip, Set<Book> purchases) {
         this.id = id;
         this.firstName = firstName;
         this.lastName = lastName;
@@ -81,11 +81,11 @@ public class Customer  implements Serializable {
         this.phoneNumber = phoneNumber;
     }
 
-    public Address getAddress() {
+    public int getAddress() {
         return address;
     }
 
-    public void setAddress(Address address) {
+    public void setAddress(int address) {
         this.address = address;
     }
 
