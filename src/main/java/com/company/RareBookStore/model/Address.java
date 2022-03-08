@@ -1,24 +1,36 @@
 package com.company.RareBookStore.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
+import javax.persistence.*;
 import java.util.Objects;
 
+@Entity
+@JsonIgnoreProperties({ "hibernateLazyInitializer", "handler" })
+@Table(name = "address")
 public class Address {
 
+    @Id
+    @Column(name = "id")
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private Integer id;
     private String street1;
     private String street2;
     private String city;
     private String state;
     private String zipcode;
+    private String phone;
 
     public Address() {
     }
 
-    public Address(String street1, String street2, String city, String state, String zipcode) {
+    public Address(String street1, String street2, String city, String state, String zipcode, String phone) {
         this.street1 = street1;
         this.street2 = street2;
         this.city = city;
         this.state = state;
         this.zipcode = zipcode;
+        this.phone = phone;
     }
 
     public String getStreet1() {
@@ -61,17 +73,25 @@ public class Address {
         this.zipcode = zipcode;
     }
 
+    public String getPhone() {
+        return phone;
+    }
+
+    public void setPhone(String phone) {
+        this.phone = phone;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Address address = (Address) o;
-        return Objects.equals(street1, address.street1) && Objects.equals(street2, address.street2) && Objects.equals(city, address.city) && Objects.equals(state, address.state) && Objects.equals(zipcode, address.zipcode);
+        return Objects.equals(street1, address.street1) && Objects.equals(street2, address.street2) && Objects.equals(city, address.city) && Objects.equals(state, address.state) && Objects.equals(zipcode, address.zipcode) && Objects.equals(phone, address.phone);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(street1, street2, city, state, zipcode);
+        return Objects.hash(street1, street2, city, state, zipcode, phone);
     }
 
     @Override
@@ -82,6 +102,7 @@ public class Address {
                 ", city='" + city + '\'' +
                 ", state='" + state + '\'' +
                 ", zipcode='" + zipcode + '\'' +
+                ", phone='" + phone + '\'' +
                 '}';
     }
 }
