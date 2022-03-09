@@ -35,8 +35,7 @@ public class Customer  implements Serializable {
     public Customer() {
     }
 
-    public Customer(Integer id, String firstName, String lastName, String email, Address address, String phone, boolean vip/*, Set<Book> purchases*/) {
-        this.id = id;
+    public Customer(String firstName, String lastName, String email, Address address, String phone, boolean vip/*, Set<Book> purchases*/) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.email = email;
