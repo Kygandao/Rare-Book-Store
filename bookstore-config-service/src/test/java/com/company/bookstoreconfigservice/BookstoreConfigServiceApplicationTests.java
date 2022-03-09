@@ -1,10 +1,10 @@
-package com.company.RareBookStore;
+package com.company.bookstoreconfigservice;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class RareBookStoreApplicationTests {
+class BookstoreConfigServiceApplicationTests {
 
 	@Test
 	void contextLoads() {
