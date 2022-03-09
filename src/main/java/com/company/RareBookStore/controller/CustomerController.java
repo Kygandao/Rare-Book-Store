@@ -24,7 +24,7 @@ public class CustomerController {
     }
 
     //GET CUSTOMER BY ID
-    @GetMapping("/customers/{id}")
+    @GetMapping("/customer/{id}")
     @ResponseStatus(HttpStatus.OK)
     public Customer getCustomerById(@PathVariable Integer id) {
         Optional<Customer> returnVal = customerRepository.findById(id);
@@ -52,7 +52,7 @@ public class CustomerController {
     //DELETE CUSTOMER BY ID
     @DeleteMapping("/customers/{id}")
     @ResponseStatus(HttpStatus.OK)
-    public void deleteCustomer(@RequestBody Customer customer, @PathVariable Integer id) {
+    public void deleteCustomer(@PathVariable Integer id) {
         customerRepository.deleteById(id);
     }
 }
