@@ -24,7 +24,7 @@ public class CustomerController {
     }
 
     //GET CUSTOMER BY ID
-    @GetMapping("/customers/{id}")
+    @GetMapping("/customer/{id}")
     @ResponseStatus(HttpStatus.OK)
     public Customer getCustomerById(@PathVariable Integer id) {
         Optional<Customer> returnVal = customerRepository.findById(id);
