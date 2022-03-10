@@ -23,7 +23,7 @@ public class Customer implements Serializable {
             @Column(name = "street2"),
             @Column(name = "city"), @Column(name = "state"),
             @Column(name = "zipcode")})
-    @Type(type = "com.company.RareBookStore.model.AddressType")
+    @Type(type = "com.company.customerservice.model.AddressType")
     private Address address;
     private String phone;
     private boolean vip;
