@@ -4,31 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ca9392d4-bb0e-4137-a88c-e678e81c7863" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/RareBookStore/CorsConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/RareBookStore/RareBookStoreApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/RareBookStore/controller/BookController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/RareBookStore/controller/CustomerController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/RareBookStore/model/Address.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/RareBookStore/model/AddressType.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/RareBookStore/model/Book.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/RareBookStore/model/Customer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/RareBookStore/repository/BookRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/RareBookStore/repository/CustomerRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/RareBookStore/service/ServiceLayer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/company/RareBookStore/RareBookStoreApplicationTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/company/RareBookStore/repository/BookRepositoryTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/company/RareBookStore/repository/CustomerRepositoryMockitoTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/company/RareBookStore/repository/CustomerRepositoryTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/application.properties" beforeDir="false" />
-    </list>
+    <list default="true" id="ca9392d4-bb0e-4137-a88c-e678e81c7863" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -36,6 +12,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -72,6 +51,9 @@
       <updated>1646869620470</updated>
     </task>
     <servers />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="application.properties" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
