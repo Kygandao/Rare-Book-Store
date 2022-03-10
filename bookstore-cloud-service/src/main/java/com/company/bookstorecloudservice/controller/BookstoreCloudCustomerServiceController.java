@@ -40,13 +40,13 @@ public class BookstoreCloudCustomerServiceController {
     //UPDATE CUSTOMER BY ID
     @PutMapping("/customers/{id}")
     public void updateCustomer(@RequestBody Customer customer, @PathVariable Integer id) {
-
+    customerClient.updateCustomer(customer, id);
     }
 
     //DELETE CUSTOMER BY ID
     @DeleteMapping("/customers/{id}")
     public void deleteCustomer(@PathVariable Integer id) {
-
+    customerClient.deleteCustomer(id);
     }
 
 

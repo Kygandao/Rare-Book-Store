@@ -61,11 +61,13 @@ public class BookstoreCloudInventoryServiceController {
     //UPDATE BOOK BY ID
     @PutMapping("/books/{id}")
     public void updateBook(@RequestBody Book book, @PathVariable Integer id) {
+       inventoryClient.updateBook(book, id);
     }
 
     //DELETE BOOK BY ID
     @DeleteMapping("/books/{id}")
     public void deleteBook(@PathVariable Integer id) {
+       inventoryClient.deleteBook(id);
     }
 
 
