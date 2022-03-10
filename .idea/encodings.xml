@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/../FINAL PROJECT/book-inventory-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../FINAL PROJECT/book-inventory-service/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../FINAL PROJECT/bookstore-cloud-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../FINAL PROJECT/bookstore-cloud-service/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../FINAL PROJECT/bookstore-config-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../FINAL PROJECT/bookstore-config-service/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../FINAL PROJECT/customer-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../FINAL PROJECT/customer-service/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../FINAL PROJECT/service-registry/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../FINAL PROJECT/service-registry/src/main/resources" charset="UTF-8" />
+  </component>
+</project>

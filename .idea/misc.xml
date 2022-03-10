@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/../FINAL PROJECT/service-registry/pom.xml" />
+        <option value="$PROJECT_DIR$/../FINAL PROJECT/customer-service/pom.xml" />
+        <option value="$PROJECT_DIR$/../FINAL PROJECT/bookstore-config-service/pom.xml" />
+        <option value="$PROJECT_DIR$/../FINAL PROJECT/bookstore-cloud-service/pom.xml" />
+        <option value="$PROJECT_DIR$/../FINAL PROJECT/book-inventory-service/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="17" project-jdk-type="JavaSDK" />
+</project>
