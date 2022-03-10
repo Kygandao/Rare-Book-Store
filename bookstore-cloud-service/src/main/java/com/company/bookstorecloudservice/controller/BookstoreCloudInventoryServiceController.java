@@ -29,7 +29,7 @@ public class BookstoreCloudInventoryServiceController {
     }
 
     //GET BOOK BY ID
-    @GetMapping("/book/{id}")
+    @GetMapping("/books/{id}")
     public Book getBookById(@PathVariable Integer id) {
        return inventoryClient.getBookById(id);
     }
@@ -59,7 +59,7 @@ public class BookstoreCloudInventoryServiceController {
     }
 
     //UPDATE BOOK BY ID
-    @PutMapping("/book/{id}")
+    @PutMapping("/books/{id}")
     public void updateBook(@RequestBody Book book, @PathVariable Integer id) {
     }
 

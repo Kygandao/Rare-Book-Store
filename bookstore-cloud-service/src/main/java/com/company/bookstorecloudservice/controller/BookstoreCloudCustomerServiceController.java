@@ -26,7 +26,7 @@ public class BookstoreCloudCustomerServiceController {
     }
 
     //GET CUSTOMER BY ID
-    @GetMapping("/customer/{id}")
+    @GetMapping("/customers/{id}")
     public Customer getCustomerById(@PathVariable Integer id) {
         return customerClient.getCustomerById(id);
     }

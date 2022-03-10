@@ -24,7 +24,7 @@ public class BookController {
     }
 
     //GET BOOK BY ID
-    @GetMapping("/book/{id}")
+    @GetMapping("/books/{id}")
     @ResponseStatus(HttpStatus.OK)
     public Book getBookById(@PathVariable Integer id) {
         Optional<Book> returnVal = bookRepository.findById(id);
@@ -61,7 +61,7 @@ public class BookController {
     }
 
     //UPDATE BOOK BY ID
-    @PutMapping("/book/{id}")
+    @PutMapping("/books/{id}")
     @ResponseStatus(HttpStatus.OK)
     public void updateBook(@RequestBody Book book, @PathVariable Integer id) {
         if(book.getId() != id) {
