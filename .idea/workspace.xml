@@ -6,10 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="ca9392d4-bb0e-4137-a88c-e678e81c7863" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/book-inventory-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/book-inventory-service/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bookstore-cloud-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/bookstore-cloud-service/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/customer-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/customer-service/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book-inventory-service/src/main/java/com/company/bookinventoryservice/controller/BookController.java" beforeDir="false" afterPath="$PROJECT_DIR$/book-inventory-service/src/main/java/com/company/bookinventoryservice/controller/BookController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bookstore-cloud-service/src/main/java/com/company/bookstorecloudservice/controller/BookstoreCloudCustomerServiceController.java" beforeDir="false" afterPath="$PROJECT_DIR$/bookstore-cloud-service/src/main/java/com/company/bookstorecloudservice/controller/BookstoreCloudCustomerServiceController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bookstore-cloud-service/src/main/java/com/company/bookstorecloudservice/controller/BookstoreCloudInventoryServiceController.java" beforeDir="false" afterPath="$PROJECT_DIR$/bookstore-cloud-service/src/main/java/com/company/bookstorecloudservice/controller/BookstoreCloudInventoryServiceController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bookstore-cloud-service/src/main/java/com/company/bookstorecloudservice/util/feign/BookInventoryClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/bookstore-cloud-service/src/main/java/com/company/bookstorecloudservice/util/feign/BookInventoryClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bookstore-cloud-service/src/main/java/com/company/bookstorecloudservice/util/feign/CustomerClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/bookstore-cloud-service/src/main/java/com/company/bookstorecloudservice/util/feign/CustomerClient.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -115,8 +116,8 @@
         <item itemvalue="Application.CustomerServiceApplication" />
         <item itemvalue="Application.BookInventoryServiceApplication" />
         <item itemvalue="Application.BookstoreCloudServiceApplication" />
-        <item itemvalue="Application.BookstoreConfigServiceApplication" />
         <item itemvalue="Application.ServiceRegistryApplication" />
+        <item itemvalue="Application.BookstoreConfigServiceApplication" />
       </list>
     </recent_temporary>
   </component>
