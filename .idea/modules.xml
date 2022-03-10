@@ -2,11 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/../FINAL PROJECT/book-inventory-service/book-inventory-service.iml" filepath="$PROJECT_DIR$/../FINAL PROJECT/book-inventory-service/book-inventory-service.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../FINAL PROJECT/bookstore-cloud-service/bookstore-cloud-service.iml" filepath="$PROJECT_DIR$/../FINAL PROJECT/bookstore-cloud-service/bookstore-cloud-service.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../FINAL PROJECT/bookstore-config-service/bookstore-config-service.iml" filepath="$PROJECT_DIR$/../FINAL PROJECT/bookstore-config-service/bookstore-config-service.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../FINAL PROJECT/customer-service/customer-service.iml" filepath="$PROJECT_DIR$/../FINAL PROJECT/customer-service/customer-service.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../FINAL PROJECT/service-registry/service-registry.iml" filepath="$PROJECT_DIR$/../FINAL PROJECT/service-registry/service-registry.iml" />
+      <module fileurl="file://$PROJECT_DIR$/book-inventory-service/book-inventory-service.iml" filepath="$PROJECT_DIR$/book-inventory-service/book-inventory-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bookstore-cloud-service/bookstore-cloud-service.iml" filepath="$PROJECT_DIR$/bookstore-cloud-service/bookstore-cloud-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bookstore-config-service/bookstore-config-service.iml" filepath="$PROJECT_DIR$/bookstore-config-service/bookstore-config-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/customer-service/customer-service.iml" filepath="$PROJECT_DIR$/customer-service/customer-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/service-registry/service-registry.iml" filepath="$PROJECT_DIR$/service-registry/service-registry.iml" />
     </modules>
   </component>
 </project>

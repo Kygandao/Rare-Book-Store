@@ -11,5 +11,15 @@
     <file url="file://$PROJECT_DIR$/../FINAL PROJECT/customer-service/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/../FINAL PROJECT/service-registry/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/../FINAL PROJECT/service-registry/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/book-inventory-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/book-inventory-service/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/bookstore-cloud-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/bookstore-cloud-service/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/bookstore-config-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/bookstore-config-service/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/customer-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/customer-service/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/service-registry/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/service-registry/src/main/resources" charset="UTF-8" />
   </component>
 </project>
