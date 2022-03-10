@@ -8,26 +8,41 @@
         <outputRelativeToContentRoot value="true" />
         <module name="bookstore-cloud-service" />
         <module name="book-inventory-service" />
-        <module name="bookstore-config-service" />
         <module name="customer-service" />
+        <module name="bookstore-config-service" />
         <module name="service-registry" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="book-inventory-service" target="1.8" />
+      <module name="book-inventory-service (1)" target="1.8" />
+      <module name="book-inventory-service (2)" target="1.8" />
       <module name="bookstore-cloud-service" target="1.8" />
+      <module name="bookstore-cloud-service (1)" target="1.8" />
+      <module name="bookstore-cloud-service (2)" target="1.8" />
       <module name="bookstore-config-service" target="1.8" />
+      <module name="bookstore-config-service (1)" target="1.8" />
+      <module name="bookstore-config-service (2)" target="1.8" />
       <module name="customer-service" target="1.8" />
+      <module name="customer-service (1)" target="1.8" />
+      <module name="customer-service (2)" target="1.8" />
       <module name="service-registry" target="1.8" />
+      <module name="service-registry (1)" target="1.8" />
+      <module name="service-registry (2)" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="book-inventory-service" options="-parameters" />
+      <module name="book-inventory-service (2)" options="-parameters" />
       <module name="bookstore-cloud-service" options="-parameters" />
+      <module name="bookstore-cloud-service (2)" options="-parameters" />
       <module name="bookstore-config-service" options="-parameters" />
+      <module name="bookstore-config-service (2)" options="-parameters" />
       <module name="customer-service" options="-parameters" />
+      <module name="customer-service (2)" options="-parameters" />
       <module name="service-registry" options="-parameters" />
+      <module name="service-registry (2)" options="-parameters" />
     </option>
   </component>
 </project>

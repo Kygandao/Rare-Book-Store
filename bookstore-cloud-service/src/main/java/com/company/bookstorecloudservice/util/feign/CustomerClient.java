@@ -14,7 +14,7 @@ public interface CustomerClient {
     public List<Customer> getAllCustomers();
 
     //GET CUSTOMER BY ID
-    @GetMapping("/customer/{id}")
+    @GetMapping("/customers/{id}")
     public Customer getCustomerById(@PathVariable Integer id);
 
     //CREATE NEW CUSTOMER

@@ -16,7 +16,7 @@ public interface BookInventoryClient {
     public List<Book> getAllBooks();
 
     //GET BOOK BY ID
-    @GetMapping("/book/{id}")
+    @GetMapping("/books/{id}")
     public Book getBookById(@PathVariable Integer id);
 
     //GET BOOKS BY AUTHOR
@@ -36,7 +36,7 @@ public interface BookInventoryClient {
     public Book createBook(@RequestBody @Valid Book book);
 
     //UPDATE BOOK BY ID
-    @PutMapping("/book/{id}")
+    @PutMapping("/books/{id}")
     public void updateBook(@RequestBody Book book, @PathVariable Integer id);
 
     //DELETE BOOK BY ID
