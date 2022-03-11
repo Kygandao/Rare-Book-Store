@@ -1,6 +1,6 @@
-package com.company.bookinventoryservice.model;
+package com.company.bookinventoryservice.repository;
 
-import com.company.bookinventoryservice.repository.BookRepository;
+import com.company.bookinventoryservice.model.Book;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -18,7 +18,7 @@ import static org.mockito.Mockito.when;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @SpringBootTest
-public class BookTestMockito {
+public class BookRepositoryTestMockito {
 
     @MockBean
     BookRepository bookRepository;

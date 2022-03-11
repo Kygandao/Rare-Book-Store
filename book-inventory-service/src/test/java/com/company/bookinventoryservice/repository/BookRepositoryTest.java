@@ -1,6 +1,6 @@
-package com.company.bookinventoryservice.model;
+package com.company.bookinventoryservice.repository;
 
-import com.company.bookinventoryservice.repository.BookRepository;
+import com.company.bookinventoryservice.model.Book;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -16,7 +16,7 @@ import static org.junit.Assert.*;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @SpringBootTest
-public class BookTest {
+public class BookRepositoryTest {
 
     @Autowired
     BookRepository bookRepository;
