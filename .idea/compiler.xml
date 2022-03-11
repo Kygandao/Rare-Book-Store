@@ -8,8 +8,8 @@
         <outputRelativeToContentRoot value="true" />
         <module name="bookstore-cloud-service" />
         <module name="book-inventory-service" />
-        <module name="customer-service" />
         <module name="bookstore-config-service" />
+        <module name="customer-service" />
         <module name="service-registry" />
       </profile>
     </annotationProcessing>
