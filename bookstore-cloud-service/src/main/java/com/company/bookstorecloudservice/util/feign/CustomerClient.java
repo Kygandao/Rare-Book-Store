@@ -19,11 +19,11 @@ public interface CustomerClient {
 
     //CREATE NEW CUSTOMER
     @PostMapping("/customers")
-    public Customer createCustomer(@RequestBody Customer customer);
+    public Customer createCustomer(@RequestBody Object customer);
 
     //UPDATE CUSTOMER BY ID
     @PutMapping("/customers/{id}")
-    public void updateCustomer(@RequestBody Customer customer, @PathVariable Integer id);
+    public void updateCustomer(@RequestBody Object customer, @PathVariable Integer id);
 
     //DELETE CUSTOMER BY ID
     @DeleteMapping("/customers/{id}")

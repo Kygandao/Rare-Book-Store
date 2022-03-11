@@ -1,7 +1,7 @@
 package com.company.bookstorecloudservice.controller;
 
+import com.company.bookstorecloudservice.util.feign.BookInventoryClient;
 import com.company.bookstorecloudservice.util.feign.CustomerClient;
-import com.company.customerservice.model.Customer;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.web.bind.annotation.*;
@@ -21,25 +21,25 @@ public class BookstoreCloudCustomerServiceController {
 
     //GET ALL CUSTOMERS
     @GetMapping("/customers")
-    public List<Customer> getAllCustomers() {
+    public List getAllCustomers() {
         return customerClient.getAllCustomers();
     }
 
     //GET CUSTOMER BY ID
     @GetMapping("/customers/{id}")
-    public Customer getCustomerById(@PathVariable Integer id) {
+    public Object getCustomerById(@PathVariable Integer id) {
         return customerClient.getCustomerById(id);
     }
 
     //CREATE NEW CUSTOMER
     @PostMapping("/customers")
-    public Customer createCustomer(@RequestBody Customer customer) {
+    public Object createCustomer(@RequestBody Object customer) {
         return customerClient.createCustomer(customer);
     }
 
     //UPDATE CUSTOMER BY ID
     @PutMapping("/customers/{id}")
-    public void updateCustomer(@RequestBody Customer customer, @PathVariable Integer id) {
+    public void updateCustomer(@RequestBody Object customer, @PathVariable Integer id) {
     customerClient.updateCustomer(customer, id);
     }
 
@@ -48,7 +48,5 @@ public class BookstoreCloudCustomerServiceController {
     public void deleteCustomer(@PathVariable Integer id) {
     customerClient.deleteCustomer(id);
     }
-
-
 
 }

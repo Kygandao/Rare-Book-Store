@@ -3,9 +3,6 @@ package com.company.bookinventoryservice.model;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 import javax.persistence.*;
-import javax.validation.constraints.NotEmpty;
-import javax.validation.constraints.PositiveOrZero;
-import javax.validation.constraints.Size;
 import java.io.Serializable;
 import java.util.Objects;
 
@@ -18,25 +15,19 @@ public class Book implements Serializable {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer id;
 
-    @NotEmpty(message = "Must provide the Title of the Book")
     private String title;
-    @NotEmpty(message = "Must provide the Author of the Book")
     private String author;
     private String genre;
-    @Size(min = 4, max = 4, message = "Year must be exactly 4 digits")
     private String yearWritten;
     private String edition;
     private String binding;
-    @NotEmpty(message = "Must provide the Condition of the Book")
     private String bookCondition;
-    @PositiveOrZero
     private double price;
 
     public Book() {
     }
 
-    public Book(Integer id, String title, String author, String genre, String yearWritten, String edition, String binding, String bookCondition, double price) {
-        this.id = id;
+    public Book(String title, String author, String genre, String yearWritten, String edition, String binding, String bookCondition, double price) {
         this.title = title;
         this.author = author;
         this.genre = genre;
