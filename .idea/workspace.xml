@@ -5,12 +5,43 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ca9392d4-bb0e-4137-a88c-e678e81c7863" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/book-inventory-service/src/test/java/com/company/bookinventoryservice/controller/BookControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_dataformat_jackson_dataformat_xml_2_13_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_dataformat_jackson_dataformat_xml_2_13_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_jersey_contribs_jersey_apache_client4_1_19_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_jersey_contribs_jersey_apache_client4_1_19_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_jersey_jersey_client_1_19_4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_jersey_jersey_client_1_19_4.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_jersey_jersey_core_1_19_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_jersey_jersey_core_1_19_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_jersey_jersey_server_1_19_4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_jersey_jersey_server_1_19_4.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_jersey_jersey_servlet_1_19_4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_jersey_jersey_servlet_1_19_4.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_freemarker_freemarker_2_3_31.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_freemarker_freemarker_2_3_31.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_freemarker_2_6_4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_freemarker_2_6_4.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_netflix_eureka_server_3_1_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_netflix_eureka_server_3_1_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_netflix_eureka_server_3_1_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_netflix_eureka_server_3_1_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book-inventory-service/src/main/java/com/company/bookinventoryservice/controller/BookController.java" beforeDir="false" afterPath="$PROJECT_DIR$/book-inventory-service/src/main/java/com/company/bookinventoryservice/controller/BookController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book-inventory-service/src/main/java/com/company/bookinventoryservice/model/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/book-inventory-service/src/main/java/com/company/bookinventoryservice/model/Book.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book-inventory-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/book-inventory-service/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bookstore-cloud-service/src/main/java/com/company/bookstorecloudservice/controller/BookstoreCloudCustomerServiceController.java" beforeDir="false" afterPath="$PROJECT_DIR$/bookstore-cloud-service/src/main/java/com/company/bookstorecloudservice/controller/BookstoreCloudCustomerServiceController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bookstore-cloud-service/src/main/java/com/company/bookstorecloudservice/controller/BookstoreCloudInventoryServiceController.java" beforeDir="false" afterPath="$PROJECT_DIR$/bookstore-cloud-service/src/main/java/com/company/bookstorecloudservice/controller/BookstoreCloudInventoryServiceController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bookstore-cloud-service/src/main/java/com/company/bookstorecloudservice/util/feign/BookInventoryClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/bookstore-cloud-service/src/main/java/com/company/bookstorecloudservice/util/feign/BookInventoryClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bookstore-cloud-service/src/main/java/com/company/bookstorecloudservice/util/feign/CustomerClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/bookstore-cloud-service/src/main/java/com/company/bookstorecloudservice/util/feign/CustomerClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bookstore-cloud-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/bookstore-cloud-service/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer-service/src/main/java/com/company/customerservice/model/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/customer-service/src/main/java/com/company/customerservice/model/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/customer-service/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JUnit4 Test Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -36,13 +67,70 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/bookstore-cloud-service/src/main/java/com/company" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/book-inventory-service/pom.xml" />
     <property name="settings.editor.selected.configurable" value="MTConfigurable" />
   </component>
-  <component name="RunManager" selected="Application.BookstoreCloudServiceApplication">
-    <configuration name="BookInventoryServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.company.bookinventoryservice.BookInventoryServiceApplication" />
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.company.bookinventoryservice.controller" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.com.company.bookinventoryservice in book-inventory-service">
+    <configuration name="BookTestMockito.deleteBookById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="book-inventory-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.company.bookinventoryservice.model.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.company.bookinventoryservice.model" />
+      <option name="MAIN_CLASS_NAME" value="com.company.bookinventoryservice.model.BookTestMockito" />
+      <option name="METHOD_NAME" value="deleteBookById" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BookTestMockito.updateBookById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="book-inventory-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.company.bookinventoryservice.model.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.company.bookinventoryservice.model" />
+      <option name="MAIN_CLASS_NAME" value="com.company.bookinventoryservice.model.BookTestMockito" />
+      <option name="METHOD_NAME" value="updateBookById" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CustomerRepositoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="customer-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.company.customerservice.repository.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.company.customerservice.repository" />
+      <option name="MAIN_CLASS_NAME" value="com.company.customerservice.repository.CustomerRepositoryTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="com.company.bookinventoryservice in book-inventory-service" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="book-inventory-service" />
       <extension name="coverage">
         <pattern>
@@ -50,38 +138,13 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="com.company.bookinventoryservice" />
+      <option name="TEST_OBJECT" value="package" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BookstoreCloudServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.company.bookstorecloudservice.BookstoreCloudServiceApplication" />
-      <module name="bookstore-cloud-service" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.company.bookstorecloudservice.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="BookstoreConfigServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.company.bookstoreconfigservice.BookstoreConfigServiceApplication" />
-      <module name="bookstore-config-service" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.company.bookstoreconfigservice.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CustomerServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.company.customerservice.CustomerServiceApplication" />
+    <configuration name="com.company.customerservice in customer-service" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="customer-service" />
       <extension name="coverage">
         <pattern>
@@ -89,30 +152,32 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="com.company.customerservice" />
+      <option name="TEST_OBJECT" value="package" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ServiceRegistryApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.company.serviceregistry.ServiceRegistryApplication" />
+    <configuration default="true" type="JetRunConfigurationType">
       <module name="service-registry" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.company.serviceregistry.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="service-registry" />
+      <option name="filePath" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.BookstoreCloudServiceApplication" />
-        <item itemvalue="Application.BookstoreConfigServiceApplication" />
-        <item itemvalue="Application.BookInventoryServiceApplication" />
-        <item itemvalue="Application.ServiceRegistryApplication" />
-        <item itemvalue="Application.CustomerServiceApplication" />
+        <item itemvalue="JUnit.com.company.bookinventoryservice in book-inventory-service" />
+        <item itemvalue="JUnit.com.company.customerservice in customer-service" />
+        <item itemvalue="JUnit.CustomerRepositoryTest" />
+        <item itemvalue="JUnit.BookTestMockito.deleteBookById" />
+        <item itemvalue="JUnit.BookTestMockito.updateBookById" />
       </list>
     </recent_temporary>
   </component>
