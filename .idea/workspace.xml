@@ -5,8 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ca9392d4-bb0e-4137-a88c-e678e81c7863" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/book-inventory-service/src/test/java/com/company/bookinventoryservice/model/BookTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/book-inventory-service/src/test/java/com/company/bookinventoryservice/repository/BookRepositoryTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/book-inventory-service/src/test/java/com/company/bookinventoryservice/model/BookTestMockito.java" beforeDir="false" afterPath="$PROJECT_DIR$/book-inventory-service/src/test/java/com/company/bookinventoryservice/repository/BookRepositoryTestMockito.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book-inventory-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/book-inventory-service/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bookstore-cloud-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/bookstore-cloud-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bookstore-cloud-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/bookstore-cloud-service/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/customer-service/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,55 +63,9 @@
       <recent name="com.company.bookinventoryservice.controller" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.com.company.bookinventoryservice in book-inventory-service">
-    <configuration name="BookTestMockito.deleteBookById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="book-inventory-service" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.company.bookinventoryservice.model.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.company.bookinventoryservice.model" />
-      <option name="MAIN_CLASS_NAME" value="com.company.bookinventoryservice.model.BookTestMockito" />
-      <option name="METHOD_NAME" value="deleteBookById" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="BookTestMockito.updateBookById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="book-inventory-service" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.company.bookinventoryservice.model.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.company.bookinventoryservice.model" />
-      <option name="MAIN_CLASS_NAME" value="com.company.bookinventoryservice.model.BookTestMockito" />
-      <option name="METHOD_NAME" value="updateBookById" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CustomerRepositoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="customer-service" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.company.customerservice.repository.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.company.customerservice.repository" />
-      <option name="MAIN_CLASS_NAME" value="com.company.customerservice.repository.CustomerRepositoryTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="com.company.bookinventoryservice in book-inventory-service" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Application.CustomerServiceApplication">
+    <configuration name="BookInventoryServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.company.bookinventoryservice.BookInventoryServiceApplication" />
       <module name="book-inventory-service" />
       <extension name="coverage">
         <pattern>
@@ -115,13 +73,38 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.company.bookinventoryservice" />
-      <option name="TEST_OBJECT" value="package" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="com.company.customerservice in customer-service" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BookstoreCloudServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.company.bookstorecloudservice.BookstoreCloudServiceApplication" />
+      <module name="bookstore-cloud-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.company.bookstorecloudservice.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BookstoreConfigServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.company.bookstoreconfigservice.BookstoreConfigServiceApplication" />
+      <module name="bookstore-config-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.company.bookstoreconfigservice.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CustomerServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.company.customerservice.CustomerServiceApplication" />
       <module name="customer-service" />
       <extension name="coverage">
         <pattern>
@@ -129,8 +112,19 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.company.customerservice" />
-      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ServiceRegistryApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.company.serviceregistry.ServiceRegistryApplication" />
+      <module name="service-registry" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.company.serviceregistry.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -150,11 +144,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.com.company.bookinventoryservice in book-inventory-service" />
-        <item itemvalue="JUnit.com.company.customerservice in customer-service" />
-        <item itemvalue="JUnit.CustomerRepositoryTest" />
-        <item itemvalue="JUnit.BookTestMockito.deleteBookById" />
-        <item itemvalue="JUnit.BookTestMockito.updateBookById" />
+        <item itemvalue="Application.CustomerServiceApplication" />
+        <item itemvalue="Application.BookInventoryServiceApplication" />
+        <item itemvalue="Application.BookstoreCloudServiceApplication" />
+        <item itemvalue="Application.ServiceRegistryApplication" />
+        <item itemvalue="Application.BookstoreConfigServiceApplication" />
       </list>
     </recent_temporary>
   </component>
